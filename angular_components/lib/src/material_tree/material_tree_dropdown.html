@@ -48,6 +48,7 @@
   <ng-content select="[post-header]"></ng-content>
   <material-tree
     *deferredContent
+    [factoryRenderer]="factoryRenderer"
     [componentRenderer]="componentRenderer"
     [expandAll]="expandAll"
     [allowParentSingleSelection]="allowParentSingleSelection"
