@@ -10,11 +10,11 @@ import 'package:angular_components/src/laminate/popup/popup_state.dart';
 
 /// A reusable interface for something that is or delegates to [PopupComponent].
 abstract class PopupInterface {
-  /// Fires an asynchronous event when the popup is being opened.
+  /// Fires a synchronous event when the popup is being opened.
   @Output('open')
   Stream<void> get onOpen;
 
-  /// Fires an asynchronous event when the popup is being closed.
+  /// Fires a synchronous event when the popup is being closed.
   @Output('close')
   Stream<void> get onClose;
 
